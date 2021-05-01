@@ -43,7 +43,9 @@
 }
 
 .pac-man {
-    background-color: yellow;
+    /* background-color: yellow; */
+    background-image: url(IMG_0033.png);
+
     border-radius: 10px;
 }
 
