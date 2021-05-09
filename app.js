@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+// document.addEventListener('DOMContentLoaded', () => { everything  })  domninat affaectio elphan listened dumbo's crazy lavitateion  
+// document was to add to event lister to dum 
+// 
 
   const scoreDisplay = document.getElementById('score')
   const width = 28
@@ -14,12 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
     1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,0,1,
     1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,0,1,
     1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,
-    1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,
-    1,1,1,1,1,1,0,1,1,4,4,4,4,4,4,4,4,4,4,1,1,0,1,1,1,1,1,1,
-    1,1,1,1,1,1,0,1,1,4,1,1,1,2,2,1,1,1,4,1,1,0,1,1,1,1,1,1,
-    1,1,1,1,1,1,0,1,1,4,1,2,2,2,2,2,2,1,4,1,1,0,1,1,1,1,1,1,
-    4,4,4,4,4,4,0,0,0,4,1,2,2,2,2,2,2,1,4,0,0,0,4,4,4,4,4,4,
-    1,1,1,1,1,1,0,1,1,4,1,2,2,2,2,2,2,1,4,1,1,0,1,1,1,1,1,1,
+    1,1,1,1,1,1,0,4,4,4,4,4,0,4,4,0,4,4,4,4,4,0,1,1,1,1,1,1,
+    1,1,1,1,1,1,0,4,4,4,4,4,4,4,4,4,4,4,4,4,4,0,1,1,1,1,1,1,
+    1,1,1,1,1,1,0,4,4,4,4,4,4,4,4,4,4,4,4,4,4,0,1,1,1,1,1,1,
+    1,1,1,1,1,1,0,1,1,4,1,4,4,4,4,4,4,1,4,1,1,0,1,1,1,1,1,1,
+    4,4,4,4,4,4,0,0,0,4,1,4,4,4,4,4,4,1,4,0,0,0,4,4,4,4,4,4,
+    1,1,1,1,1,1,0,1,1,4,1,4,4,4,4,4,4,1,4,1,1,0,1,1,1,1,1,1,
     1,1,1,1,1,1,0,1,1,4,1,1,1,1,1,1,1,1,4,1,1,0,1,1,1,1,1,1,
     1,1,1,1,1,1,0,1,1,4,1,1,1,1,1,1,1,1,4,1,1,0,1,1,1,1,1,1,
     1,0,0,0,0,0,0,0,0,4,4,4,4,4,4,4,4,4,4,0,0,0,0,0,0,0,0,1,
@@ -41,18 +44,26 @@ document.addEventListener('DOMContentLoaded', () => {
   // 4 - empty
 
   const squares = []
-
+// squires is empty array 
   //create your board
+
   function createBoard() {
+  // for i  lout
     for (let i = 0; i < layout.length; i++) {
+      // each number you create div? n...
       const square = document.createElement('div')
+      // square  is created elemveo fdiv 
       grid.appendChild(square)
+     // grid all ther class gride will append div
       squares.push(square)
+      // then in the emparya will amke div insde of squaer. 
 
       //add layout to the board
       if(layout[i] === 0) {
+        // laou 0  0  a 0 add calss of pac dot
         squares[i].classList.add('pac-dot')
       } else if (layout[i] === 1) {
+        /// 2 wall
         squares[i].classList.add('wall')
       } else if (layout[i] === 2) {
         squares[i].classList.add('ghost-lair')
@@ -62,10 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
   createBoard()
+  // invoke craeet board
 
-
-  //create Characters
-  //draw pacman onto the board
   let pacmanCurrentIndex = 490
   squares[pacmanCurrentIndex].classList.add('pac-man')
   //get the coordinates of pacman on the grid with X and Y axis
@@ -124,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
     checkForGameOver()
     checkForWin()
   }
-  document.addEventListener('keyup', movePacman)
+  document.addEventListener('keydown', movePacman)
 
   // what happens when you eat a pac-dot
   function pacDotEaten() {
@@ -164,10 +173,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //all my ghosts
   ghosts = [
-    new Ghost('blinky', 348, 250),
-    new Ghost('pinky', 376, 400),
-    new Ghost('inky', 351, 300),
-    new Ghost('clyde', 379, 500)
+    new Ghost('blinky', 348, 500),
+    new Ghost('pinky', 376, 500),
+    new Ghost('inky', 351, 500),
+    new Ghost('clyde', 379, 700)
     ]
 
   //draw my ghosts onto the grid

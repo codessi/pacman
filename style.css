@@ -9,46 +9,96 @@
 .grid div {
     width: 20px;
     height: 20px;
+
 }
 
 .pac-dot {
     background-color: green;   
-    border: 5px solid white;
+    /* border: 5px solid white; */
     box-sizing: border-box;
 }
 
 .wall {
     background-color: blue;
+    z-index: -1;
 }
 
 .power-pellet {
-    background-color: green;
+    background-color: rgb(250, 9, 9);
     border-radius: 10px;
 }
 
 .blinky {
     background-color: red;
+    background: url(IMG_0031.png);
+    background-size:  20px ;
+    /* display: inline-block; */
 }
 
 .pinky {
     background-color: pink;
+    background-image: url(Screen\ Shot\ 2021-05-08\ at\ 6.39.19\ PM.png);
+    background-size: 20px;
 }
 
 .inky {
     background-color: cyan;
+    background-image: url(Screen\ Shot\ 2021-05-08\ at\ 6.39.32\ PM.png);
+    background-size: 20px;
 }
 
 .clyde {
     background-color: orange;     
+    background-image: url(Screen\ Shot\ 2021-05-08\ at\ 6.38.50\ PM.png);
+    background-size: 20px;
 }
 
-.pac-man {
-    /* background-color: yellow; */
-    background-image: url(IMG_0033.png);
+/* .pac-man {
+    
+    background-color: yellow;
+    height: 30px !important; 
+    width: 30px !important;
+    background-image: url("IMG_0033.png");
+    background-size: 30px;
+    display: inline-block;
 
     border-radius: 10px;
+} */
+
+.pac-man {
+ 
+    background-image: url("IMG_0033.png");
+    background-size: 20px;
+    height: 30px ;
+    /* display: inline-block; */
+    /* background-position:top center; */
+    /* position:relative;
+    position: fixed; */
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    /* background-color: rgba(0,0,0,0.5); */
+    z-index: 2;
+    /* cursor: pointer; */
 }
 
 .scared-ghost {
-    background-color: aquamarine;
+    background-image: aquamarine;
+    background-image: url(Screen\ Shot\ 2021-05-08\ at\ 7.07.08\ PM.png);
+    background-size: 20px;
+    
 }
+.test{
+    background-color: darkviolet;
+    height: 50px;
+    width:40px
+}
+body { 
+    background-image: url("link to your image"); 
+    background-position: center center; 
+    background-size: 100% 100%; 
+} 
