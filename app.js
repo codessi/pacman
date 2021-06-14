@@ -2,10 +2,12 @@ document.addEventListener('DOMContentLoaded', () => {
 // document.addEventListener('DOMContentLoaded', () => { everything  })  domninat affaectio elphan listened dumbo's crazy lavitateion  
 // document was to add to event lister to dum 
 // 
+// 1. crate that add document an eventlistener when DOM Content is Loaded that will excute an anno.. function
 
   const scoreDisplay = document.getElementById('score')
   const width = 28
   let score = 0
+  // 2. assign a const called grid to class grid (using querySelector)
   const grid = document.querySelector('.grid')
   const layout = [
     1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -45,7 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const square = document.createElement('div')
       // square  is created elemveo fdiv 
       grid.appendChild(square)
-     // grid all ther class gride will append div
+     // in the grid apend child calle sqaure they are an div
+     // and 
       squares.push(square)
       // then in the emparya will amke div insde of squaer. 
 
